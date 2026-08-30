@@ -13,7 +13,6 @@ import {
   Languages,
   MapPin,
   MessageCircle,
-  Phone,
   Play,
   Quote,
   Send,
@@ -264,7 +263,7 @@ export default function Home() {
             “Oldin ingliz tilida gapirishdan qo‘rqardim. QADAM’da 5 oyda IELTS’dan 7.0 oldim va o‘zim istagan universitetga hujjat topshirdim.”
           </blockquote>
           <div className="mt-8">
-            <strong className="block text-lg font-black text-primary">Madina R.</strong>
+            <strong className="block text-lg font-black text-primary">IELTS kursi o‘quvchisi</strong>
             <span className="text-sm text-muted-foreground">IELTS kursi bitiruvchisi</span>
           </div>
         </div>
@@ -281,7 +280,6 @@ export default function Home() {
 
               <div className="mt-10 space-y-4 text-sm font-semibold text-white/80">
                 <div className="flex items-center gap-3"><Clock3 className="size-5 text-orange" /> Dushanba–shanba, 09:00–20:00</div>
-                <div className="flex items-center gap-3"><Phone className="size-5 text-orange" /> +998 71 200 20 20</div>
                 <div className="flex items-center gap-3"><MapPin className="size-5 text-orange" /> Toshkent shahri, Chilonzor</div>
               </div>
             </div>
@@ -304,7 +302,7 @@ export default function Home() {
                     <input required name="name" autoComplete="name" placeholder="Masalan: Sardor" className="h-13 rounded-xl border border-primary/12 bg-background px-4 font-medium outline-none transition placeholder:text-muted-foreground/60 focus:border-primary focus:ring-4 focus:ring-primary/8" />
                   </label>
                   <label className="grid gap-2 text-sm font-bold text-primary">Telefon raqamingiz
-                    <input required name="phone" autoComplete="tel" inputMode="tel" placeholder="+998 90 123 45 67" className="h-13 rounded-xl border border-primary/12 bg-background px-4 font-medium outline-none transition placeholder:text-muted-foreground/60 focus:border-primary focus:ring-4 focus:ring-primary/8" />
+                    <input required name="phone" autoComplete="tel" inputMode="tel" placeholder="Telefon raqami (sinov)" className="h-13 rounded-xl border border-primary/12 bg-background px-4 font-medium outline-none transition placeholder:text-muted-foreground/60 focus:border-primary focus:ring-4 focus:ring-primary/8" />
                   </label>
                   <label className="grid gap-2 text-sm font-bold text-primary">Qaysi kursga qiziqasiz?
                     <select required name="course" defaultValue="" className="h-13 rounded-xl border border-primary/12 bg-background px-4 font-medium outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/8">
@@ -331,6 +329,11 @@ export default function Home() {
           </div>
           <p className="text-sm text-white/50">© 2026 QADAM. Bilimdan natijaga — bir qadam.</p>
           <button onClick={scrollToForm} className="flex items-center gap-2 text-sm font-extrabold text-orange">Sinov darsi <ArrowRight className="size-4" /></button>
+        </div>
+        <div className="mx-auto mt-8 max-w-7xl px-5 sm:px-8">
+          <p className="border-t border-white/20 pt-6 text-center text-base font-semibold leading-relaxed text-white sm:text-lg">
+            Bu sinov sayt — haqiqiy arizalar qabul qilinmaydi
+          </p>
         </div>
       </footer>
     </main>
